@@ -16,9 +16,11 @@ function validateForm(e) {
     message.textContent = "Please provide a valid email address";
     message.classList.add("error");
     message.style.visibility = "visible";
+    emailInput.style.border = "1px solid var(--light-red)";
     setTimeout(() => {
       message.style.visibility = "hidden";
       message.classList.remove("error");
+      emailInput.style.border = "solid 1px var(--pale-blue)";
     }, 3000);
   } else {
     message.textContent = "Ready will contact with you soon!!";
