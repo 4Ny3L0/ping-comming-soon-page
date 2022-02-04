@@ -214,4 +214,9 @@ h1 span {
     align-self: flex-start;
     text-align: start;
   }
+  .success {
+    margin: -2px 0 50px 45px;
+    align-self: flex-start;
+    text-align: start;
+  }
 }
