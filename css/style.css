@@ -34,10 +34,6 @@ html {
   box-sizing: inherit;
 }
 body {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; */
   text-align: center;
   width: 375px;
   margin: 10rem auto 0;
@@ -108,18 +104,19 @@ h1 span {
 }
 .email {
   margin-bottom: 1rem;
-  /* color: var(--pale-blue); */
 }
 .email::placeholder {
   color: var(--pale-blue);
   padding-left: 1.8rem;
   font-weight: var(--light);
   opacity: 0.7;
+  font-size: 1.4rem;
 }
 .notify {
   background-color: var(--blue);
   color: white;
   margin-bottom: 8rem;
+  font-weight: var(--bold);
 }
 .notify:hover {
   cursor: pointer;
@@ -175,14 +172,15 @@ h1 span {
   border: 1px solid var(--pale-blue);
   padding: 0.8rem;
   width: 40px;
+  transition: 0.1s ease-in-out;
 }
 @media (min-width: 768px) {
   .icon-container {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--blue);
     border-radius: 50%;
     border: 1px solid var(--pale-blue);
-    padding: 0.5rem;
+    padding: 0.3rem;
     width: 28px;
     height: 23px;
   }
