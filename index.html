@@ -35,10 +35,21 @@
       <img src="./images/logo.svg" alt="the ping company logo" class="logo" />
       <h1>We are launching <span>soon!</span></h1>
       <p class="subscribe">Subscribe and get notified</p>
-      <form action="" class="submit-form">
-        <input type="text" placeholder="Your email adress..." class="email" />
-        <input type="submit" value="Notify Me" class="notify" />
-      </form>
+      <div class="form-container">
+        <form action="" class="submit-form">
+          <div class="email-container">
+            <input
+              type="text"
+              placeholder="Your email adress..."
+              class="email"
+            />
+            <p class="message"></p>
+          </div>
+          <input type="submit" value="Notify Me" class="notify" />
+        </form>
+        <!-- <p class="error">Please provide a valid email address</p> -->
+      </div>
+
       <img
         src="./images/illustration-dashboard.png"
         alt="ilustration dashboard"

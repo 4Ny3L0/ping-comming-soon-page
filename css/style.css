@@ -5,6 +5,7 @@
   /* secondary colors */
   --pale-blue: hsl(223, 100%, 88%);
   --light-red: hsl(354, 100%, 66%);
+  --light-green: hsl(93, 70%, 55%);
 
   /* Neutral colors */
   --gray: hsl(0, 0%, 59%);
@@ -137,7 +138,7 @@ h1 span {
   }
   .email {
     flex: calc(80% - 1rem);
-    width: 20rem;
+    width: 40rem;
     height: fit-content;
     margin-right: 2rem;
   }
@@ -189,4 +190,28 @@ h1 span {
   color: white;
   background-color: var(--blue);
   cursor: pointer;
+}
+.error {
+  color: var(--light-red);
+  visibility: hidden;
+}
+.success {
+  color: var(--light-green);
+}
+@media (min-width: 768px) {
+  .form-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .email-container {
+    flex: calc(80% - 1rem);
+    width: 40rem;
+    height: fit-content;
+    margin-right: 2rem;
+  }
+  .error {
+    margin: -2px 0 50px 45px;
+    align-self: flex-start;
+    text-align: start;
+  }
 }
